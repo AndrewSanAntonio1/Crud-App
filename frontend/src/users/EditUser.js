@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import { Container, Form, Button, Spinner } from 'react-bootstrap';
 import { useNavigate, useParams } from 'react-router-dom';
 import axios from 'axios';
@@ -22,11 +22,7 @@ function EditUser() {
 
   const { name, username, email } = user;
 
-  useEffect(() => {
-    loadUser();
-  }, [id]);
-
-  const loadUser = async () => {
+  const loadUser = useCallback(async () => {
     try {
       setLoading(true);
       setLoadError(null);
@@ -39,7 +35,11 @@ function EditUser() {
     } finally {
       setLoading(false);
     }
-  };
+  }, [id]);
+
+  useEffect(() => {
+    loadUser();
+  }, [loadUser]);
 
   const handleInputChange = (e) => {
     setUser({ ...user, [e.target.name]: e.target.value });
