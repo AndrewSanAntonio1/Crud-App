@@ -1,0 +1,20 @@
+{
+  "version": "1.0.0",
+  "enabled": true,
+  "name": "Taskflow System ",
+  "description": "Build the TaskFlow System frontend using React and Bootstrap. Create a responsive Navbar component with the brand name “TaskFlow” and navigation links for Home and Add User. The navbar must be mobile-friendly with a collapsible hamburger menu and use React Router for navigation. Develop a Home page that displays a Bootstrap-styled table showing user data with columns for ID, Name, Username, Email, and Actions. Each row should include View, Edit, and Delete buttons with proper styling. Use mock data for initial rendering and manage state using React useState. Ensure the UI is clean, responsive, and consistent with Bootstrap 5 design standards. Keep the structure modular and reusable.",
+  "when": {
+    "type": "fileCreated",
+    "patterns": [
+      "Navbar.js",
+      "Home.js",
+      "AddUser.js",
+      "EditUser.js",
+      "ViewUser.js"
+    ]
+  },
+  "then": {
+    "type": "askAgent",
+    "prompt": "Create the TaskFlow System frontend using React and Bootstrap 5. Start by setting up a clean project structure and installing required dependencies including React Router DOM. Build a reusable Navbar component with the brand “TaskFlow” and navigation links for Home and Add User. Ensure the navbar is responsive with a mobile hamburger menu. Create a Home page that displays a Bootstrap-styled table with mock user data including ID, Name, Username, Email, and Actions. Add View, Edit, and Delete buttons for each row with proper styling. Use React useState for basic state management. Implement routing for all pages and ensure a clean, responsive, and modern UI design.\n"
+  }
+}
