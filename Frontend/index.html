@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Personal portfolio website for a JRU Computer Programming 1 student">
+  <meta name="author" content="Student Name">
+  <meta name="keywords" content="portfolio, JRU, Jose Rizal University, Computer Programming, student portfolio, web development">
+  
+  <!-- Open Graph / Social Media Meta Tags -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Student Portfolio | JRU">
+  <meta property="og:description" content="Personal portfolio showcasing academic work and projects from Computer Programming 1 at Jose Rizal University">
+  <meta property="og:site_name" content="Student Portfolio">
+  
+  <title>E-Portfolio| JRU</title>
+  
+  <!-- Google Fonts: Inter with display=swap -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <!-- Skip to main content link for accessibility -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+  
+  <!-- Navigation Bar -->
+  <nav id="navbar" aria-label="Main navigation">
+    <div class="nav-brand">Andrew | Portfolio</div>
+    <button class="hamburger" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-links">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#welcome">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#academics">Academics</a></li>
+      <li><a href="#reflections">Reflections</a></li>
+    </ul>
+  </nav>
+
+  <main role="main" id="main-content">
+    <!-- Welcome / Hero Section -->
+    <section id="welcome" class="hero" aria-label="Welcome">
+      <div class="hero-content">
+        <h1 class="hero-title">Andrew San Antonio</h1>
+        <p class="hero-tagline">Java Developer | Jose Rizal University</p>
+        <a href="#about" class="cta-button" aria-label="Navigate to About Me section">Learn More About Me</a>
+      </div>
+    </section>
+    
+    <!-- About Me Section -->
+    <section id="about" aria-label="About Me">
+      <div class="container">
+        <div class="about-grid">
+          <!-- Left column: Profile photo -->
+          <div class="about-photo">
+            <img 
+              src="assets/images/about.jpeg" 
+              alt="Professional headshot of Student Name, JRU Computer Programming 1 student"
+              class="profile-img"
+              loading="lazy"
+              onerror="this.src='assets/images/avatar-placeholder.svg'"
+            >
+          </div>
+          
+          <!-- Right column: Text content -->
+          <div class="about-content">
+            <h2 class="section-title">About Me</h2>
+            
+            <div class="about-info">
+              <h3 class="about-name">Andrew San Antonio</h3>
+              <p class="about-course">Bachelor of Science in Information Technology</p>
+              <p class="about-school">Jose Rizal University (JRU)</p>
+            </div>
+            
+            <div class="about-text">
+              <h4>Background</h4>
+              <p>
+                I am a dedicated student currently enrolled in Computer Programming 2 at Jose Rizal University. 
+                My journey in technology began with a curiosity about how software shapes our daily lives, 
+                and has grown into a passion for creating meaningful digital solutions. Through my coursework, 
+                I've been developing a strong foundation in programming fundamentals, problem-solving, and 
+                computational thinking.
+              </p>
+              
+              <h4>Interests & Goals</h4>
+              <p>
+                I am particularly interested in SpringBoot Java Development, Ethical Hacking, Chess, Mobile games,  and the intersection 
+                of technology and education. My goal is to become a Fullstack Java Developer who can build applications 
+                that make a positive impact on people's lives. I'm excited to continue learning, growing my 
+                technical skills, and contributing to innovative projects that solve real-world problems.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Academics & Relevant Works Section -->
+    <section id="academics" aria-label="Academics and Relevant Works">
+      <div class="container">
+        <h2 class="section-title">Academics & Relevant Works</h2>
+        <p class="section-subtitle">A comprehensive showcase of my academic outputs, professional experiences, and achievements</p>
+        
+        <!-- Academic Artifacts Subsection -->
+        <div class="subsection">
+          <h3 class="subsection-title">
+            <span class="subsection-icon">📚</span>
+            Academic Artifacts
+          </h3>
+          <div id="artifacts-container" class="artifacts-grid">
+            <!-- Rendered dynamically by JavaScript -->
+          </div>
+        </div>
+        
+        <!-- Work Experience Subsection -->
+        <div class="subsection">
+          <h3 class="subsection-title">
+            <span class="subsection-icon">💼</span>
+            Work Experience
+          </h3>
+          <div id="work-experience-container" class="cards-grid">
+            <!-- Rendered dynamically by JavaScript -->
+          </div>
+        </div>
+        
+        <!-- Seminars & Trainings Subsection -->
+        <div class="subsection">
+          <h3 class="subsection-title">
+            <span class="subsection-icon">🎓</span>
+            Seminars & Trainings Attended
+          </h3>
+          <div id="seminars-container" class="list-grid">
+            <!-- Rendered dynamically by JavaScript -->
+          </div>
+        </div>
+        
+        <!-- Awards & Recognitions Subsection -->
+        <div class="subsection">
+          <h3 class="subsection-title">
+            <span class="subsection-icon">🏆</span>
+            Awards & Recognitions
+          </h3>
+          <div id="awards-container" class="list-grid">
+            <!-- Rendered dynamically by JavaScript -->
+          </div>
+        </div>
+        
+        <!-- Organization & Community Involvement Subsection -->
+        <div class="subsection">
+          <h3 class="subsection-title">
+            <span class="subsection-icon">🤝</span>
+            Organization & Community Involvement
+          </h3>
+          <div id="org-involvement-container" class="cards-grid">
+            <!-- Rendered dynamically by JavaScript -->
+          </div>
+        </div>
+        
+        <!-- JRU Professional Experience Subsection -->
+        <div class="subsection">
+          <h3 class="subsection-title">
+            <span class="subsection-icon">🎯</span>
+            JRU Professional Experience
+          </h3>
+          <div class="jru-experience-content">
+            <p>
+              Throughout my time at Jose Rizal University, I have actively engaged in various 
+              professional development opportunities. From participating in coding competitions 
+              to collaborating on group projects, each experience has contributed to my growth 
+              as a future IT professional. I continue to seek opportunities to apply my skills 
+              in real-world contexts and contribute to the JRU community.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Term Reflections Section -->
+    <section id="reflections" aria-label="Term Reflections">
+      <div class="container">
+        <h2 class="section-title">Term Reflections</h2>
+        <p class="section-subtitle">My learning journey through Computer Programming 2, reflecting on topics, experiences, and growth each term</p>
+        
+        <div id="reflections-container" class="reflections-grid">
+          <!-- Rendered dynamically by JavaScript -->
+        </div>
+      </div>
+    </section>
+  </main>
+  
+  <!-- Footer -->
+  <footer id="footer" role="contentinfo" aria-label="Site footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-info">
+          <h3 class="footer-name">Andrew San Antonio</h3>
+          <p class="footer-course">Bachelor of Science in Information Technology</p>
+          <p class="footer-school">Jose Rizal University</p>
+        </div>
+        <div class="footer-meta">
+          <p class="footer-copyright">&copy; <span id="copyright-year">2026</span> Andrew San Antonio. All rights reserved.</p>
+          <p class="footer-attribution">Built with dedication for Computer Programming 2</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+  <!-- JavaScript -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
